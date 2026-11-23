@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#172833"><title>메이드의 마음표현 · 어느 아침</title>
+<meta name="description" content="조용한 노크로 시작하는 엘린과의 아침. 클릭하거나 Enter를 눌러 이야기를 이어가세요.">
+<link rel="stylesheet" href="style.css"><script src="config.js"></script><script src="app.js" defer></script>
+</head>
+<body>
+<header><span class="brand">메이드의 마음표현</span><button id="replay" type="button" aria-label="프롤로그 처음부터 다시 보기">다시 보기</button></header>
+<main id="experience" aria-label="엘린의 아침 프롤로그">
+<section id="comic" aria-label="프롤로그 만화">
+<!-- 외부 이미지 설정은 config.js의 useExternalImages와 imageBaseUrl에서 변경하세요. -->
+<div class="page">
+<figure class="panel wide" data-step="0"><img src="assets/panel-1.webp" alt="침실 문 앞에서 엘린이 조용히 노크한다." fetchpriority="high"></figure>
+<div class="entry wide" data-step="1"><p>주인님, 들어가겠습니다.</p></div>
+<figure class="panel" data-step="2"><img src="assets/panel-2.webp" alt="아침빛이 커튼 사이로 들어오는 침실."></figure>
+<figure class="panel" data-step="3"><img src="assets/panel-3.webp" alt="엘린이 창가에서 양쪽 커튼을 연다."></figure>
+<figure class="panel" data-step="4"><img src="assets/panel-4.webp" alt="침대에 누운 시점에서 바라본 천장과 창문."></figure>
+<figure class="panel" data-step="5"><img src="assets/panel-5.webp" alt="엘린이 몸을 숙여 주인님의 얼굴을 살핀다."></figure>
+<figure class="panel wide" data-step="6"><img src="assets/panel-6.webp" alt="엘린이 입 옆에 손을 대고 가까이에서 속삭인다."></figure>
+</div>
+</section>
+<section id="ending" hidden aria-label="엘린과의 대화 시작">
+<div id="whisper" role="status" aria-live="polite"><p></p><span class="bubble-tail" aria-hidden="true"></span></div>
+<div id="invitation" hidden>
+<img class="portrait" src="assets/elin.png" alt="주인님을 바라보며 서 있는 메이드 엘린.">
+<!-- 채팅 링크와 버튼 문구는 config.js에서 수정하세요. -->
+<a id="chat" class="chat-button" aria-disabled="true">채팅하러 가기</a>
+<p id="link-status">채팅 연결을 준비하고 있어요.</p>
+</div>
+</section>
+</main>
+<footer id="guide"><span class="desktop">클릭 또는 Enter로 다음 장면</span><span class="mobile">화면을 눌러 다음 장면</span><i aria-hidden="true"></i></footer>
+</body></html>
